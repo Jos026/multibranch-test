@@ -1,5 +1,5 @@
 pipeline {
-    agent linux
+    agent any
 
     stages {
         stage("stage1") {
@@ -10,7 +10,7 @@ pipeline {
         stage('stage2') {
             steps {
                 echo "executing"
-                sh "python hello-world.py"
+
             }
         }
         stage('stage3') {
